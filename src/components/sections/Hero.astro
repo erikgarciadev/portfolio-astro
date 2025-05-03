@@ -1,0 +1,41 @@
+---
+import SectionContainer from "../SectionContainer.astro";
+---
+
+<SectionContainer id="home" class="min-h-[70dvh] flex items-center">
+  <div
+    class="flex w-full items-center lg:flex-row gap-4 lg:gap-10 text-gray-700 dark:text-gray-300 md:flex-row"
+  >
+    <div class="flex flex-col gap-2 max-w-xl">
+      <div>
+        <img
+          class="rounded-full object-cover shadow-lg size-24"
+          alt="Erik Garcia"
+          src="/image.webp"
+        />
+      </div>
+      <p class="text-4xl text-gray-800 lg:text-5xl">
+        Hola 👋, soy
+        <strong class="text-(--primary)">Erik Garcia</strong>
+      </p>
+      <p
+        class="mt-4 text-xl text-gray-800 dark:[&>strong]:text-(--primary) [&>strong]:text-(--primary) [&>strong]:font-semibold dark:text-gray-300"
+      >
+        +4 años de experiencia. <strong>Desarrollador Frontend</strong> de Lima,
+        Perú . Especializado en el desarrollo de aplicaciones web con React, NextJs.
+      </p>
+      <a
+        href="/documents/cv.pdf"
+        class="max-w-40"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button
+          class="text-white cursor-pointer bg-(--primary) font-bold flex justify-center w-full items-center px-2 py-3 max-w-40 h-10 rounded-xl"
+        >
+          CV
+        </button>
+      </a>
+    </div>
+  </div>
+</SectionContainer>

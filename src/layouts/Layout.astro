@@ -1,22 +1,60 @@
+---
+import Footer from "@/components/Footer.astro";
+import "../styles/global.css";
+import Header from "@/components/Header.astro";
+import { ClientRouter } from "astro:transitions";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>
+      Portfolio de Erik Garcia | Frontend Developer con 4 años de experiencia
+    </title>
+    <meta
+      name="description"
+      content="Frontend Developer. Especializado en React y NextJs."
+    />
+    <ClientRouter />
+  </head>
+  <body>
+    <div class="fixed left-0 top-0 -z-10 h-full w-full">
+      <div
+        class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,105,255,0.13)_0,rgba(0,105,255,0)_50%,rgba(0,105,255,0)_100%)]"
+      >
+      </div>
+    </div>
+    <Header />
+    <main class="px-4 md:px-8">
+      <slot />
+      <Footer />
+    </main>
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 </style>

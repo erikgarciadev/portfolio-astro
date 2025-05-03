@@ -1,0 +1,40 @@
+---
+import XIcon from "./Icons/Socials/XIcon.astro";
+import GithubIcon from "./Icons/Socials/GithubIcon.astro";
+import LinkedinIcon from "./Icons/Socials/LinkedinIcon.astro";
+---
+
+<footer class="py-6 lg:py-8 max-w-[1024px] flex justify-between mx-auto">
+  <div class="flex gap-4">
+    <a
+      href="https://www.linkedin.com/in/erik-garcia-tacas/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Ir a la mi cuenta de linkedin"
+      ><LinkedinIcon class="size-6 lg:size-8" /></a
+    >
+    <a
+      href="https://x.com/erikgarciadev"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Ir a la mi cuenta de la red social X"
+      ><XIcon class="size-6 lg:size-8" /></a
+    >
+    <a
+      href="https://github.com/erikgarciadev"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Ir a la mi cuenta de Github"
+    >
+      <GithubIcon class="size-6 fill-black lg:size-8" />
+    </a>
+  </div>
+  <div class="flex gap-4">
+    <a
+      class="relative block px-2 py-2 transition hover:text-(--primary) dark:hover:text-blue-500"
+      href={"#home"}
+    >
+      Inicio
+    </a>
+  </div>
+</footer>

@@ -1,0 +1,93 @@
+---
+import CssIcon from "../Icons/Tools/CssIcon.astro";
+import FirebaseIcon from "../Icons/Tools/FirebaseIcon.astro";
+import GitIcon from "../Icons/Tools/GitIcon.astro";
+import HtmlIcon from "../Icons/Tools/HtmlIcon.astro";
+import JsIcon from "../Icons/Tools/JsIcon.astro";
+import NextIcon from "../Icons/Tools/NextIcon.astro";
+import NodeJsIcon from "../Icons/Tools/NodeJsIcon.astro";
+import PostgresqlIcon from "../Icons/Tools/PostgresqlIcon.astro";
+import ReactIcon from "../Icons/Tools/ReactIcon.astro";
+import TailwindIcon from "../Icons/Tools/TailwindIcon.astro";
+import TsIcon from "../Icons/Tools/TsIcon.astro";
+import SectionContainer from "../SectionContainer.astro";
+---
+
+<SectionContainer id="about">
+  <article
+    class="flex flex-col lg:flex-row justify-center gap-4 lg:gap-10 text-gray-700 dark:text-gray-300 md:flex-row"
+  >
+    <div class="w-full xl:w-[60%]">
+      <h2 class="text-center py-4 lg:py-5 font-bold text-2xl lg:text-4xl">
+        Sobre Mí
+      </h2>
+      <div
+        class="[&>p]:mb-4 [&>p>strong]:text-[#2169ff] dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+      >
+        <p>
+          Busco desarrollarme dentro de una empresa que me permita adquirir
+          conocimientos y experiencias,al mismo tiempo que me dé la oportunidad
+          de <strong>
+            aportar mis habilidades, entusiasmo y energía para crecer
+            profesionalmente.</strong
+          >
+        </p>
+
+        <p>
+          Actualmente me dedico principalmante al desarrollo frontend
+          <strong
+            >aunque también me he involucrado en el desarrollo backend</strong
+          >, por lo cual estoy dispuesto a poder aprender y desempeñarme como
+          fullstack.
+        </p>
+
+        <p>
+          Me gustaría poder <strong>enseñar a otros miembros del equipo,</strong
+          > para poder mejorar mis habilidades de liderazgo.
+        </p>
+      </div>
+    </div>
+    <div class="w-full xl:w-[40%] flex flex-col lg:items-center">
+      <h2 class="text-center py-4 lg:py-5 font-bold text-2xl lg:text-4xl">
+        Habilidades
+      </h2>
+      <div
+        class="grid grid-cols-4 sm:grid-cols-5 xl:grid-cols-5 gap-4 lg:gap-6"
+      >
+        <div class="flex justify-center items-center">
+          <HtmlIcon title="Html" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <CssIcon title="Css" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <JsIcon title="Js" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <TsIcon title="Ts" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <ReactIcon title="React" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <NextIcon title="NextJs" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <GitIcon title="Git" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <TailwindIcon title="Tailwind" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <NodeJsIcon title="NodeJs" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <FirebaseIcon title="Firebase" class="size-12" />
+        </div>
+        <div class="flex justify-center items-center">
+          <PostgresqlIcon title="Postgresql" class="size-12" />
+        </div>
+      </div>
+    </div>
+  </article>
+</SectionContainer>
