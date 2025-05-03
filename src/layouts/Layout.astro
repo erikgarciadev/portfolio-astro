@@ -6,7 +6,7 @@ import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
-<html data-theme="light" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -20,6 +20,9 @@ import { ClientRouter } from "astro:transitions";
       content="Frontend Developer. Especializado en React y NextJs."
     />
     <ClientRouter />
+    <script>
+      localStorage.theme = "light";
+    </script>
   </head>
   <body>
     <div class="fixed left-0 top-0 -z-10 h-full w-full">
